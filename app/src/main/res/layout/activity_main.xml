@@ -1,0 +1,97 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttonLayout"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bttn1"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn2"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn3"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bttn4"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn5"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn6"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bttn7"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn8"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginRight="3pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/bttn9"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:onClick="btnClick"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </TableRow>
+</TableLayout>
