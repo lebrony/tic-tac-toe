@@ -6,6 +6,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import java.util.*
+import kotlin.collections.ArrayList
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -107,5 +110,24 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Player Two Wins", Toast.LENGTH_LONG).show()
             }
         }
+    }
+
+    fun autoPlay(){
+        var emptyCells = ArrayList<Int>()
+        for (CellID in 1..9){
+            if (!(playerOne.contains(CellID) || playerTwo.contains(CellID))){
+                emptyCells.add(CellID)
+            }
+        }
+
+        val r = Random()
+        val randomIndex = r.nextInt(emptyCells.size-0)+0
+        val  CellID = emptyCells[randomIndex]
+
+        val btnSelect:Button?
+        when(CellID){
+
+        }
+
     }
 }
