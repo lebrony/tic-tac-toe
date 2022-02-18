@@ -1,5 +1,6 @@
 package com.techspeck.tictactoe
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,5 +26,25 @@ class MainActivity : AppCompatActivity() {
             R.id.bttn8 -> CellID = 8
             R.id.bttn9 -> CellID = 9
         }
+        playGame(CellID, btnSelected)
+    }
+
+    var playerOne = ArrayList<Int>()
+    var playerTwo = ArrayList<Int>()
+    var activePlayer = 1
+
+    fun playGame(CellID:Int, btnSelected:Button){
+        if (activePlayer == 1){
+            btnSelected.text = "X"
+            btnSelected.setBackgroundColor(Color.GREEN)
+            playerTwo.add(CellID)
+            activePlayer=2
+        } else {
+            btnSelected.text = "O"
+            btnSelected.setBackgroundColor(Color.YELLOW)
+            playerOne.add(CellID)
+            activePlayer=1
+        }
+        btnSelected.isEnabled = false
     }
 }
