@@ -17,10 +17,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     protected fun btnClick(view:View){
-        val btnSelected = view as Button
+        var btnSelected = view as Button
         var CellID = 0
         when (btnSelected.id){
-            R.id.bttn1 -> CellID=1
+            R.id.bttn1 -> CellID= 1
             R.id.bttn2 -> CellID = 2
             R.id.bttn3 -> CellID = 3
             R.id.bttn4 -> CellID = 4
@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             btnSelected.setBackgroundColor(Color.GREEN)
             playerTwo.add(CellID)
             activePlayer=2
+            autoPlay()
         } else {
             btnSelected.text = "O"
             btnSelected.setBackgroundColor(Color.YELLOW)
@@ -120,14 +121,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        val r = Random()
-        val randomIndex = r.nextInt(emptyCells.size-0)+0
-        val  CellID = emptyCells[randomIndex]
-
-        val btnSelect:Button?
-        when(CellID){
-
-        }
+//        val r = Random()
+//        val randomIndex = r.nextInt(emptyCells.size-0)+0
+//        val  cellID = emptyCells[randomIndex]
+//
+//        var btnSelect:Button?
+//        when(cellID){
+//            1-> btnSelect=
+//        }
 
     }
 }
